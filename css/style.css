@@ -1,0 +1,118 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+/*End General*/
+
+/*Header*/
+header , footer{
+    background-color: #373737;
+}
+header{
+    z-index: 999;
+}
+.navbar-brand{
+    margin-left: 60px;
+}
+.btn-toggler-icon {
+    width: 25px;
+    height: 1px;
+    margin: 6px 0;
+    display: block;
+    background-color: #fff;
+}
+.link-color{
+    color: #fff!important;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+}
+.link-color:hover{
+    color: #ff655c!important;
+}
+.nav-link{
+    margin-left: 40px;
+}
+/*End Header*/
+
+/*Home*/
+.home{
+    background-image: url(../images/News.jpg);
+    height: 80vh;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.home .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    width: 90%;
+    text-align: center;
+}
+.home-content p{
+    color: #fff;
+    font-size: 30px;
+}
+/*End Home*/
+
+/*Start News*/
+.news-item{
+    cursor: pointer;
+   
+}
+.news-item .image{
+    overflow: hidden;
+   
+}
+.news-item .image img{
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+.news-item:hover img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+/*End News*/
+
+/*Footer*/
+footer span{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+/*End Footer*/
+@media (max-width: 576px){
+   .nav-link{
+       color: #fff!important;
+       float: right;
+   }
+}
